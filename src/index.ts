@@ -17,7 +17,11 @@ class Product {
 increaseQuantity(amount: number ) {
         this.quantity += amount;
 }
+changePrice(newPrice: number) {
+        this.price = newPrice;
+}
 }
 const product = new Product ("Pizza", 2, 3)
 product.increaseQuantity(5)
+product.changePrice(12)
 console.log(product.getTotalPrice());

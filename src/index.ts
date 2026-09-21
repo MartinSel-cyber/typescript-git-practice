@@ -20,8 +20,16 @@ increaseQuantity(amount: number ) {
 changePrice(newPrice: number) {
         this.price = newPrice;
 }
+checkStock() {
+        if (this.quantity <= 0) {
+            return "Product is out of stock";
+        } else {
+            return "Product is available";
+        }
+}
 }
 const product = new Product ("Pizza", 2, 3)
-product.increaseQuantity(5)
+product.quantity = 3
+console.log(product.checkStock());
 product.changePrice(12)
 console.log(product.getTotalPrice());

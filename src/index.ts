@@ -28,8 +28,15 @@ checkStock() {
         }
 }
 }
-const product = new Product ("Pizza", 2, 3)
-product.quantity = 3
+const product = new Product ("Pizza", 13, 1)
+const product2 = new Product ("Pasta", 12, 5)
+
+console.log("Product 1:");
 console.log(product.checkStock());
-product.changePrice(12)
+console.log(product.name);
 console.log(product.getTotalPrice());
+
+console.log("Product 2:");
+console.log(product2.checkStock());
+console.log(product2.name);
+console.log(product2.getTotalPrice());

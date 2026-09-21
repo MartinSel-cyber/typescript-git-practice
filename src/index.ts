@@ -30,6 +30,7 @@ checkStock() {
 }
 const product = new Product ("Pizza", 13, 1)
 const product2 = new Product ("Pasta", 12, 5)
+const product3 = new Product ("", 14, 3)
 
 console.log("Product 1:");
 console.log(product.checkStock());
